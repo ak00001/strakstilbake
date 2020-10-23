@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    image: strakstilbake
+    build: .
+    container_name: beta_strakstilbake
+    restart: always
+    ports:
+      - "80:80"
+      - "80:443"
